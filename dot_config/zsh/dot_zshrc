@@ -1,0 +1,24 @@
+# Only check cached .zcompdump file once per day. See https://gist.github.com/ctechols/ca1035271ad134841284
+autoload -Uz compinit
+
+ZCOMPDUMPFILE=$ZCACHEDIR/zcompdump-$ZSH_VERSION
+
+for dump in $ZCOMPDUMPFILE(N.mh+24); do
+  compinit -d $ZCOMPDUMPFILE
+done
+compinit -C -d $ZCOMPDUMPFILE
+
+
+# ANTIBODY (zsh plugin manager) 
+# ==============================
+# Load zsh plugins
+source ${ZCACHEDIR}/antibody/zsh_plugins.sh
+
+# ALIASES
+# =======
+alias mci="mvn clean install"
+alias mcp="mvn clean package"
+alias open="xdg-open"
+
+alias pip="pip2"
+alias e="nvim"
