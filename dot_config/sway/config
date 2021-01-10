@@ -222,6 +222,7 @@ font pango:monospace 16px
 exec firefox
 exec gammastep-indicator
 exec autotiling
+exec nextcloud
 
 exec_always kanshi
 
