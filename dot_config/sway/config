@@ -64,7 +64,7 @@ input * {
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec nwgbar -o 0.8
 
-bindsym $mod+Ctrl+l exec swaylock --config ~/.config/swaylock/config
+bindsym $mod+Ctrl+l exec swaylock
 
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
