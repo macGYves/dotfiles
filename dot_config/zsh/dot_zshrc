@@ -9,6 +9,16 @@ done
 compinit -C -d $ZCOMPDUMPFILE
 
 
+
+
+
+# Launch gpg-agent for use by SSH
+# ===============================
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
+
 # ANTIBODY (zsh plugin manager) 
 # ==============================
 # Load zsh plugins
@@ -20,5 +30,5 @@ alias mci="mvn clean install"
 alias mcp="mvn clean package"
 alias open="xdg-open"
 
-alias pip="pip2"
+#alias pip="pip2"
 alias e="nvim"
