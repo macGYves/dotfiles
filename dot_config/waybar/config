@@ -58,19 +58,20 @@
     "sway/workspaces": {
         "all-outputs": false,
         "disable-scroll": true,
-        "format": "{name}:{icon}",
+        "format": "{name}: {icon}",
         "format-icons": {
             "1": "", // Icon: terminal
             "2": "", // Icon: firefox-browser
             "3": "", // Icon: code
+	    "5": "",  // Icon: key
             "urgent": "",
             "focused": "",
             "default": ""
         },
 	"persistent_workspaces": {
             "1": ["eDP-1"],
-	        "2": ["DP-1"],
-	        "3": ["DP-1"]
+	    "2": ["DP-1"],
+	    "3": ["DP-1"]
         }
     },
     "custom/keyboard-layout": {
