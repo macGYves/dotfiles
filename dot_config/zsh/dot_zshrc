@@ -24,6 +24,9 @@ gpgconf --launch gpg-agent
 # Load zsh plugins
 source ${ZCACHEDIR}/antibody/zsh_plugins.sh
 
+
+
+export EDITOR=nvim
 # ALIASES
 # =======
 alias mci="mvn clean install"
