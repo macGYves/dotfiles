@@ -40,11 +40,15 @@
             "",
             "",
             ""
-        ]
+        ], 
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "tooltip": false
     },
     "battery#2": {
         "bat": "BAT0",
         "states": {
+            "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -55,7 +59,10 @@
             "",
             "",
             ""
-        ]
+        ], 
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "tooltip": false
     },
     "network": {
         "format-wifi": "",
