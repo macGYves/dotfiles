@@ -33,57 +33,52 @@
             "warning": 30,
             "critical": 15
         },
+        "format": "{icon}",
         "format-icons": [
-            "\uf244",
-            "\uf243",
-            "\uf242",
-            "\uf241",
-            "\uf240"
-        ],
-        "format-charging": "{capacity}% \uf5e7",
-        "format-plugged": "{capacity}% \uf1e6",
-        "tooltip": false
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "battery#2": {
-        "bat": "BAT1",
+        "bat": "BAT0",
         "states": {
             "warning": 30,
             "critical": 15
         },
         "format": "{icon}",
-        "format-charging": "{capacity}% \uf5e7",
-        "format-plugged": "{capacity}% \uf1e6",
         "format-icons": [
-            "\uf244",
-            "\uf243",
-            "\uf242",
-            "\uf241",
-            "\uf240"
-        ],
-        "tooltip": false
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
-        "format-wifi": "\uf1eb",
+        "format-wifi": "",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} \uf0c1",
-        "format-disconnected": "Disconnected \u26a0"
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠"
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}\uf294",
-        "format-muted": "\uf026",
-        "format-source": "{volume}% \uf130",
-        "format-source-muted": "\uf131",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
         "format-icons": {
-            "headphones": "\uf025",
-            "handsfree": "\uf590",
-            "headset": "\uf590",
-            "phone": "\uf095",
-            "portable": "\uf095",
-            "car": "\uf1b9",
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
             "default": [
-                "\uf027",
-                "\uf028"
+                "",
+                ""
             ]
         },
         "on-click": "pavucontrol"
@@ -93,13 +88,13 @@
         "disable-scroll": true,
         "format": "{name}: {icon}",
         "format-icons": {
-            "1": "\uf120",
-            "2": "\uf269",
-            "3": "\uf121",
-            "5": "\uf084",
-            "urgent": "\uf06a",
-            "focused": "\uf192",
-            "default": "\uf111"
+            "1": "", // Icon: terminal
+            "2": "", // Icon: firefox-browser
+            "3": "", // Icon: code
+            "5": "", // Icon: key
+            "urgent": "",
+            "focused": "",
+            "default": ""
         },
         "persistent_workspaces": {
             "1": [
