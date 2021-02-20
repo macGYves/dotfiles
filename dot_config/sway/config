@@ -212,6 +212,9 @@ bar {
 
 font pango:monospace 16px
 
+# 
+# Autostart
+#
 exec firefox
 exec gammastep-indicator
 exec autotiling
