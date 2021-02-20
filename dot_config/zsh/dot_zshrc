@@ -27,6 +27,8 @@ source ${ZCACHEDIR}/antibody/zsh_plugins.sh
 
 
 export EDITOR=nvim
+export VISUAL=nvim
+
 # ALIASES
 # =======
 alias mci="mvn clean install"
