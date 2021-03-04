@@ -37,7 +37,7 @@ alias open="xdg-open"
 
 
 
-#alias pip="pip2"
+alias pip="pip3"
 alias -g e="nvim"
 
 # Pacman aliases
