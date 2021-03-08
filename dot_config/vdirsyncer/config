@@ -1,0 +1,18 @@
+[general]
+status_path    = "~/.config/vdirsyncer/status/"
+
+[pair personal_contacts]
+a              = "personal_contacts_local"
+b              = "personal_contacts_remote"
+collections    = [ "contacts", "familie", "freunde" ]
+
+[storage personal_contacts_local]
+type           = "filesystem"
+path           = "~/Contacts/"
+fileext        = ".vcf"
+
+[storage personal_contacts_remote]
+type           = "carddav"
+url.fetch      = ["command", "secret-tool", "lookup", "Path", "vdirsyncer-contacts-url"] 
+username.fetch = ["command", "secret-tool", "lookup", "Path", "vdirsyncer-contacts-username"]
+password.fetch = ["command", "secret-tool", "lookup", "Path", "vdirsyncer-contacts-password"]
