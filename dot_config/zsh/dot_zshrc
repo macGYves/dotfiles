@@ -42,8 +42,7 @@ alias mci="mvn clean install"
 alias mcp="mvn clean package"
 
 ## chezmoi
-alias cma="chezmoi add"
-alias cmapply="chezmoi apply"
+alias cm="chezmoi"
 
 ## docker/docker-compose
 alias dps="docker ps"
