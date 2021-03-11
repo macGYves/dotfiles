@@ -37,14 +37,19 @@ PATH=$PATH:~/.local/bin
 
 # ALIASES
 # =======
+## maven
 alias mci="mvn clean install"
 alias mcp="mvn clean package"
-alias open="xdg-open"
 
+## docker/docker-compose
+alias dcup="docker-compose up"
 
-
+## python
 alias pip="pip3"
+
+# misc
 alias -g e="nvim"
+alias open="xdg-open"
 
 # Pacman aliases
 alias -g pacman-upgrade="sudo pacman -Syu"      # Synchronize with repositories and then upgrade packages on local system.
