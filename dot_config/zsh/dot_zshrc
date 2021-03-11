@@ -41,7 +41,12 @@ PATH=$PATH:~/.local/bin
 alias mci="mvn clean install"
 alias mcp="mvn clean package"
 
+## chezmoi
+alias cma="chezmoi add"
+alias cmapply="chezmoi apply"
+
 ## docker/docker-compose
+alias dps="docker ps"
 alias dcup="docker-compose up"
 
 ## python
