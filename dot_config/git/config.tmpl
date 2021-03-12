@@ -1,8 +1,12 @@
 [user]
 	name = Yves Gänssinger
 	email = {{ .email }}
+	signingkey = {{ .git.signingkey }}
 [pull]
 	rebase = true
 [init]
-	defaultBranch = main
+	defaultBranch = {{ .git.defaultbranch}}
 	templateDir = {{ .chezmoi.homedir }}/.config/git/templates
+[commit]
+	gpgsign = true
+
