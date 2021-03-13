@@ -30,7 +30,7 @@ for_window [class="^Chromium$"]     inhibit_idle fullscreen
 ### Input configuration
 input * {
     xkb_layout "de,gb,se"
-    xkb_options grp:alt_caps_toggle
+    xkb_options grp:alt_caps_toggle,caps:swapescape
     xkb_numlock enable
 }
 
