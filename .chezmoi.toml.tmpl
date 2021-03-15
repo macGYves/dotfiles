@@ -1,0 +1,9 @@
+{{- $email := promptString "email" -}}
+{{- $gitSigningkey := promptString "git signingkey" -}}
+{{- $gitDefaultBranch := promptString "git default branch" -}}
+[data]
+email = {{ $email }}
+
+[data.git]
+signingkey = {{ $gitSigningkey }} 
+defaultbranch = {{ $gitDefaultBranch }}
