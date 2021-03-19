@@ -24,6 +24,9 @@ gpgconf --launch gpg-agent
 # Load zsh plugins
 source ${ZCACHEDIR}/antibody/zsh_plugins.sh
 
+# zsh-z config
+# ------------
+export ZSHZ_DATA=~/.local/share/zsh-z
 
 
 export EDITOR=nvim
