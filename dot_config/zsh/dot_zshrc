@@ -44,6 +44,14 @@ PATH=$PATH:~/.local/bin
 alias mci="mvn clean install"
 alias mcp="mvn clean package"
 
+# git
+alias ga="git add"
+alias gst="git status"
+alias gp="git pull"
+alias gb="git branch"
+alias glog="git log"
+alias gco="git checkout"
+
 ## chezmoi
 alias cm="chezmoi"
 
@@ -57,6 +65,8 @@ alias pip="pip3"
 # misc
 alias -g e="nvim"
 alias open="xdg-open"
+
+
 
 # Pacman aliases
 alias -g pacman-upgrade="sudo pacman -Syu"      # Synchronize with repositories and then upgrade packages on local system.
