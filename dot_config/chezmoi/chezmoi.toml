@@ -1,9 +1,0 @@
-[data]
-email = "yves.ganssinger@wirelesscar.com"
-
-[data.git]
-signingkey = "0xA22DC5A648072AE9"
-defaultbranch = "master"
-
-[cd]
-command = "/usr/bin/zsh"
