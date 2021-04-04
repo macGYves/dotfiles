@@ -51,6 +51,7 @@ alias gp="git pull"
 alias gb="git branch"
 alias glog="git log"
 alias gco="git checkout"
+alias gd="git diff"
 
 ## chezmoi
 alias cm="chezmoi"
