@@ -36,7 +36,11 @@ export VISUAL=nvim
 # PATH modifications
 # ==================
 
-PATH=$PATH:~/.local/bin
+LOCAL_BIN="${HOME}/.local/bin"
+if [[ ":$PATH:" != *":${LOCAL_BIN}:"* ]] && [ -d "${LOCAL_BIN}" ]; then
+    # Prepend ~/.local/bin to PATH when it's not included and when the directory exists
+    PATH=~/.local/bin:${PATH}
+fi
 
 # ALIASES
 # =======
@@ -50,8 +54,11 @@ alias gst="git status"
 alias gp="git pull"
 alias gb="git branch"
 alias glog="git log"
+alias gcam="git commit --all -m"
 alias gco="git checkout"
 alias gd="git diff"
+alias gcm="git checkout master"
+
 
 ## chezmoi
 alias cm="chezmoi"
