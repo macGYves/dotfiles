@@ -2,8 +2,8 @@
 {{- $gitSigningkey := promptString "git signingkey" -}}
 {{- $gitDefaultBranch := promptString "git default branch" -}}
 [data]
-email = {{ $email }}
+email = "{{ $email }}"
 
 [data.git]
-signingkey = {{ $gitSigningkey }} 
-defaultbranch = {{ $gitDefaultBranch }}
+signingkey = "{{ $gitSigningkey }}" 
+defaultbranch = "{{ $gitDefaultBranch }}"
