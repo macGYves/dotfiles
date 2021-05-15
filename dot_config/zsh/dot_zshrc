@@ -61,7 +61,7 @@ alias gcm="git checkout master"
 
 
 ## chezmoi
-alias cm="chezmoi"
+alias che="chezmoi"
 
 ## docker/docker-compose
 alias dps="docker ps"
