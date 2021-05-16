@@ -137,6 +137,7 @@ bindsym $mod+0 workspace number 10
 
 assign [app_id="firefox"] workspace number $workspace_www
 assign [class="jetbrains-idea"] workspace number $workspace_coding
+assign [app_id="VSCodium"] workspace number $workspace_coding
 assign [class="Slack"] workspace number $workspace_communication
 assign [app_id="org.keepassxc.KeePassXC"] workspace number $workspace_pw
 
