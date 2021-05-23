@@ -1,0 +1,11 @@
+[Unit]
+Description=Nextcloud sync client
+Documentation=man nextcloud
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nextcloud
+
+[Install]
+WantedBy=sway-session.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Opens new windows in a space-efficient manner 
+Documentation=https://github.com/nwg-piotr/autotiling
+BindsTo=sway-session.target
+
+[Service]
+ExecStart=/usr/bin/autotiling
+
+[Install]
+WantedBy=sway-session.target

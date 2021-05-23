@@ -221,9 +221,6 @@ font pango:monospace 16px
 exec_always "systemctl --user import-environment; systemctl --user start sway-session.target"
 
 exec firefox
-exec gammastep-indicator
-exec autotiling
-exec nextcloud
 
 ########## Styling ##########
 
