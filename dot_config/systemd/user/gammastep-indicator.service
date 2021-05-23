@@ -1,0 +1,10 @@
+[Unit]
+Description=Adaptive display colour temperature service
+Documentation=man gammastep
+BindsTo=sway-session.target
+
+[Service]
+ExecStart=/usr/bin/gammastep-indicator
+
+[Install]
+WantedBy=sway-session.target
