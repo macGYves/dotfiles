@@ -11,15 +11,17 @@ set $term alacritty
 # Your preferred application launcher
 set $menu nwggrid
 
+set $Locker swaylock
+
 ### Output configuration
 exec ~/.azotebg
 
 
 ### Idle configuration
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
+         timeout 300 'swaylock -f' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep 'swaylock -f '
 
 
 # inhibit idle mode when browsers are in fullscreen
@@ -60,7 +62,7 @@ input * {
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec nwgbar -o 0.8
 
-bindsym $mod+Ctrl+l exec swaylock
+bindsym $mod+Ctrl+l exec $Locker 
 
 
 bindsym --locked XF86AudioRaiseVolume  exec pactl set-sink-volume @DEFAULT_SINK@ +5%
