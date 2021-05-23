@@ -1,0 +1,9 @@
+[Unit]
+Description=Handle automounting of usb devices
+Documentation=man:udiskie(1)
+
+[Service]
+ExecStart=/usr/bin/udiskie --appindicator
+
+[Install]
+WantedBy=sway-session.target
