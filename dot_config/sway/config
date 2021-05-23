@@ -247,6 +247,7 @@ for_window [app_id="Chromium"] border none
 # Remove application title bars
 #default_border none
 
+xwayland disable
 
 include /etc/sway/config.d/*
 
