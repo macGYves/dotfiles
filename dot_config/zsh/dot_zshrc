@@ -50,14 +50,15 @@ alias mcp="mvn clean package"
 
 # git
 alias ga="git add"
-alias gst="git status"
-alias gp="git pull"
 alias gb="git branch"
-alias glog='git log --oneline --decorate --graph'
+alias gc="git commit"
 alias gcam="git commit --all -m"
+alias gcm="git checkout master"
 alias gco="git checkout"
 alias gd="git diff"
-alias gcm="git checkout master"
+alias glog='git log --oneline --decorate --graph'
+alias gp="git pull"
+alias gst="git status"
 
 
 ## chezmoi
