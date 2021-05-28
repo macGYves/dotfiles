@@ -8,7 +8,6 @@
     "network",
     "bluetooth",
     "battery",
-    "battery#2",
     "tray",
     "custom/keyboard-layout",
     "clock"
@@ -26,56 +25,39 @@
   "bluetooth": {
     "format": "{icon}",
     "format-icons": {
-      "enabled": "",
-      "disabled": ""
+      "enabled": "󰂯",
+      "disabled": "󰂲"
     },
     "tooltip-format": "{}"
   },
   "battery": {
-    "bat": "BAT0",
     "states": {
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}",
-    "format-icons": ["", "", "", "", ""],
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "tooltip": false
-  },
-  "battery#2": {
-    "bat": "BAT0",
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{icon}",
-    "format-icons": ["", "", "", "", ""],
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "tooltip": false
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": ["󱊡", "󱊢", "󱊣"]
   },
   "network": {
-    "format-wifi": "",
+    "format-wifi": "󰖩",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-    "format-disconnected": "Disconnected ⚠"
+    "format-ethernet": "󰈀",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+    "format-disconnected": "󰌙"
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} {format_source}",
+    "format": "{icon} {format_source}",
     "format-bluetooth": "{volume}% {icon}",
-    "format-muted": "",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
+    "format-muted": "󰝟",
+    "format-source": "󰍬",
+    "format-source-muted": "󰍭",
     "format-icons": {
-      "headphones": "",
-      "handsfree": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", ""]
+      "headphones": "󰋋",
+      "default": ["󰕿", "󰖀", "󰕾"]
     },
     "on-click": "pavucontrol"
   },
@@ -84,13 +66,13 @@
     "disable-scroll": true,
     "format": "{name}: {icon}",
     "format-icons": {
-      "1": "", // Icon: terminal
-      "2": "", // Icon: firefox-browser
-      "3": "", // Icon: code
-      "5": "", // Icon: key
-      "urgent": "",
-      "focused": "",
-      "default": ""
+      "1": "󰋜", // Icon: terminal
+      "2": "󰈹", // Icon: firefox-browser
+      "3": "󰵮", // Icon: code
+      "5": "󱕴", // Icon: key
+      "urgent": "󰝥",
+      "focused": "󰺕",
+      "default": "󰝦"
     },
     "persistent_workspaces": {
       "1": ["eDP-1"],
