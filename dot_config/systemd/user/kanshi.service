@@ -4,7 +4,6 @@ Documentation=https://github.com/emersion/kanshi
 BindsTo=sway-session.target
 
 [Service]
-Type=simple
 ExecStart=/usr/bin/kanshi
 
 [Install]
