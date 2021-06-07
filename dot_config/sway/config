@@ -243,6 +243,7 @@ for_window [class="Slack"] border none
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="wdisplays"] floating enable
 for_window [app_id="Chromium"] border none
+for_window [app_id="VSCodium"] border none
 
 # Remove application title bars
 #default_border none
