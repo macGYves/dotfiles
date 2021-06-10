@@ -1,0 +1,6 @@
+export MOZ_ENABLE_WAYLAND=1
+
+export XDG_CURRENT_DESKTOP=sway
+
+# Fixes blank screen issues with java applications
+export _JAVA_AWT_WM_NONREPARENTING=1
