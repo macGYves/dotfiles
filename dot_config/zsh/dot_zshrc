@@ -75,6 +75,8 @@ alias -g e="nvim"
 alias open="xdg-open"
 alias email="neomutt"
 
+# Workaround for starting vscodium on native wayland
+alias code="vscodium --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 # Pacman aliases
 alias -g pacman-upgrade="sudo pacman -Syu"      # Synchronize with repositories and then upgrade packages on local system.
