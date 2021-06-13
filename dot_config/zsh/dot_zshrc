@@ -73,7 +73,7 @@ alias pip="pip3"
 # misc
 alias -g e="nvim"
 alias open="xdg-open"
-
+alias email="neomutt"
 
 
 # Pacman aliases
