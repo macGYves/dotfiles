@@ -9,9 +9,6 @@ done
 compinit -C -d $ZCOMPDUMPFILE
 
 
-
-
-
 # Launch gpg-agent for use by SSH
 # ===============================
 export GPG_TTY="$(tty)"
@@ -23,6 +20,8 @@ gpgconf --launch gpg-agent
 # ==============================
 # Load zsh plugins
 source ${ZCACHEDIR}/antibody/zsh_plugins.sh
+
+
 
 # zsh-z config
 # ------------
@@ -42,4 +41,5 @@ if [[ ":$PATH:" != *":${LOCAL_BIN}:"* ]] && [ -d "${LOCAL_BIN}" ]; then
     PATH=~/.local/bin:${PATH}
 fi
 
-. ${ZDOTDIR}/aliases.zsh
+source ${ZDOTDIR}/aliases.zsh
+source ${ZDOTDIR}/completion/pip.zsh
