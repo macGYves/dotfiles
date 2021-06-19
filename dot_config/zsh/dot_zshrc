@@ -32,6 +32,9 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 
+# turn off all beeps
+unsetopt BEEP
+
 # PATH modifications
 # ==================
 
