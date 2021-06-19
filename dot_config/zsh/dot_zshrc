@@ -35,13 +35,19 @@ export VISUAL=nvim
 # turn off all beeps
 unsetopt BEEP
 
+# Syntax highlighting for less
+if [[ -a /usr/bin/src-hilite-lesspipe.sh ]]; then
+  export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+  export LESS=' -R '
+fi
+
 # PATH modifications
 # ==================
 
 LOCAL_BIN="${HOME}/.local/bin"
 if [[ ":$PATH:" != *":${LOCAL_BIN}:"* ]] && [ -d "${LOCAL_BIN}" ]; then
-    # Prepend ~/.local/bin to PATH when it's not included and when the directory exists
-    PATH=~/.local/bin:${PATH}
+  # Prepend ~/.local/bin to PATH when it's not included and when the directory exists
+  PATH=~/.local/bin:${PATH}
 fi
 
 source ${ZDOTDIR}/aliases.zsh
